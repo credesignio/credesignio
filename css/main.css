@@ -145,13 +145,13 @@ footer .copy::first-letter {
 main .title {
   background-position: center;
   background-size: auto 100%;
-  background-color: grey;
+  background-color: #2FC4A1;
   padding: 5rem 0;
 }
 main .title .center {
   max-width: 600px;
   color: #2FC4A1;
-  text-shadow: -2px -2px 1px #eee, 2px 2px 1px #2E2827, 0 0 20px #2E2827, 0 0 20px #fff8;
+  text-shadow: -2px -2px 0px #eee, 2px 2px 0px #2E2827;
 }
 main .title .center h1 {
   font-size: 6rem;

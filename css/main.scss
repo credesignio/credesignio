@@ -192,13 +192,13 @@ main{
         // background-image: url('../img/title-bg.svg');
         background-position: center;
         background-size: auto 100%;
-        background-color: grey;
+        background-color: $theme;
         padding: 5rem 0;
 
         .center{
             max-width: 600px;
             color: $theme;
-            text-shadow: -2px -2px 1px $white, 2px 2px 1px $black, 0 0 20px $black, 0 0 20px #fff8;
+            text-shadow: -2px -2px 0px $white, 2px 2px 0px $black;
             h1{
                 font-size: 6rem;
                 line-height: 100%;
