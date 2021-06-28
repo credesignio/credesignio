@@ -312,6 +312,16 @@ main{
     }
     .contact{
         @include section;
+
+        .message{
+            padding: 2rem;
+            margin: 2rem;
+            border: 3px solid $theme;
+            font-size: 2rem;
+            font-weight: bold;
+            font-family: comfortaa;
+            margin-bottom: 395.2px - 98px - 16px;
+        }
     }
 }
 

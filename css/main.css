@@ -301,6 +301,15 @@ main .contact p {
 main .contact .center {
   display: block;
 }
+main .contact .message {
+  padding: 2rem;
+  margin: 2rem;
+  border: 3px solid #2FC4A1;
+  font-size: 2rem;
+  font-weight: bold;
+  font-family: comfortaa;
+  margin-bottom: 281.2px;
+}
 
 .form-label {
   display: block;

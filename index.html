@@ -114,7 +114,7 @@
             <div class="center">
                 <h2>Contact Us</h2>
                 <p>Have questions or interested in any of our services and want to schedule a meeting? Please contact us and we would be happy to discuss what would be the best solution for you business.</p>
-                <form action="">
+                <form id="contactForm" action="https://formspree.io/f/mnqlzdbw" method="post" target="nullFrame">
                     <label class="form-label" for="form-name">Name</label><input type="text" id="form-name" name="name"
                         placeholder="John" />
                     <label class="form-label" for="form-email">Email</label><input id="form-email" type="email" name="email"
@@ -123,7 +123,7 @@
                         placeholder="" required="true" cols="40" rows="4"></textarea>
                     <button type="submit">Send</button>
                 </form>
-
+                <iframe id="nullFrame" name="nullFrame" style="display:none"></iframe>
             </div>
         </section>
     </main>
@@ -133,5 +133,15 @@
             <span class="logo-text">CreDesign</span>
             <span class="copy">&copy;CreDesign 2021</span>
     </footer>
+
+    <script>
+        let nullFrame = document.getElementById('nullFrame');
+        let form = document.getElementById('contactForm')
+        form.onsubmit = function(){
+            setTimeout(function(){
+                form.innerHTML = '<div class="message">Sent! We will get in touch soon.</div>';
+            }, 500)
+        }
+    </script>
 </body>
 </html>
