@@ -1,362 +1,241 @@
-.center {
-  max-width: 1010px;
-  display: inline-block;
-  margin: 0 auto;
-  text-align: left;
+html, body {
+  margin: 0;
+  padding: 0;
 }
 
-main > * {
-  text-align: center;
-}
-
-h1, h2, h3, h4 {
-  font-family: comfortaa, sans-serif;
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  margin: 0;
-  padding: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Ubuntu, Roboto, Oxygen, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  color: #2E2827;
-  line-height: 175%;
+  font-family: "Work Sans", Arial, sans-serif;
+  color: #211d1c;
 }
 
-header, footer {
-  padding: 0.3rem 1rem;
-  display: flex;
-  align-items: center;
+* {
+  box-sizing: border-box;
+}
+
+p {
+  line-height: 150%;
+}
+
+u {
   position: relative;
-}
-header .logo, footer .logo {
-  height: 60px;
-  width: auto;
-  margin-right: 0.5rem;
-}
-header .logo-text, footer .logo-text {
-  font-family: comfortaa, sans-serif;
-  font-size: 1.75rem;
-  color: #2E2827;
-}
-header nav, footer nav {
   display: inline-block;
-  margin-left: 2rem;
-}
-header nav ul, footer nav ul {
-  list-style: none;
-  padding: 0;
-}
-header nav ul li, footer nav ul li {
-  display: inline-block;
-  margin-right: 0.3rem;
-  font-size: 1.1rem;
-}
-header nav ul li a, footer nav ul li a {
+  z-index: 5;
   text-decoration: none;
-  color: #2E2827;
+  text-transform: capitalize;
 }
-header nav ul li a:hover, header nav ul li a:focus-visible, footer nav ul li a:hover, footer nav ul li a:focus-visible {
+u::after {
+  content: "";
+  position: absolute;
+  height: 0.35em;
+  left: -0.1875em;
+  right: -0.1875em;
+  bottom: 0.075em;
+  background-color: rgba(47, 196, 161, 0.4);
+  z-index: -1;
+}
+
+li u:after {
+  bottom: 0.2em;
+}
+
+h1, h2 {
+  font-family: "Comfortaa";
+  margin: 0;
+}
+
+p {
+  margin-bottom: 0;
+}
+
+a {
+  color: #2FC4A1;
+  text-decoration: none;
+}
+a:hover, a:focus-visible {
   text-decoration: underline;
   outline: none;
-  color: black;
 }
-header .menu, footer .menu {
-  background: none;
-  padding: 0;
-  margin: 0;
-  font-size: 2.5rem;
+
+::selection {
+  background: #2FC4A1;
+  color: white;
+}
+
+.button, button {
+  text-transform: uppercase;
   border: none;
-  border-radius: 3rem;
-  padding: 0.3rem;
-  transition: 0.2s;
-  display: none;
+  padding: 0.75rem 1.5rem;
+  background: #2FC4A1;
+  border-radius: 2rem;
+  color: white;
+  font-weight: bold;
+  transition: background-color 0.2s;
+  letter-spacing: 1px;
+  font-size: inherit;
 }
-header .menu::before, footer .menu::before {
-  content: "menu";
-}
-header nav:focus-within .menu:before, footer nav:focus-within .menu:before {
-  content: "menu_open";
-}
-header nav:hover .menu, header nav:focus .menu, footer nav:hover .menu, footer nav:focus .menu {
-  background-color: #00000005;
+.button:hover, button:hover {
+  text-decoration: none;
+  background-color: #51d5b6;
   cursor: pointer;
 }
-@media (max-width: 500px) {
-  header nav, footer nav {
-    margin-left: auto;
-  }
-  header nav ul, footer nav ul {
-    display: none;
-    position: absolute;
-    top: 3.5rem;
-    right: 0;
-    background-color: #eee;
-    width: 150px;
-    padding: 0.4rem;
-    box-sizing: border-box;
-    border-bottom: 2px solid #2FC4A1;
-  }
-  header nav ul li, footer nav ul li {
-    display: block;
-    margin-top: 0.3rem;
-  }
-  header nav ul li a, footer nav ul li a {
-    box-sizing: border-box;
-    padding: 0.2rem 0.5rem;
-    width: 100%;
-    display: inline-block;
-  }
-  header nav ul li a:hover, header nav ul li a:focus, footer nav ul li a:hover, footer nav ul li a:focus {
-    background-color: #0002;
-    border-radius: 0.1rem;
-  }
-  header .menu, footer .menu {
-    display: inline-block;
-  }
-}
-header nav:focus-within, footer nav:focus-within {
+.button:focus-visible, button:focus-visible {
+  text-decoration: none;
   outline: none;
+  box-shadow: 0 0 0 3px white, 0 0 0 6px #2FC4A1;
 }
-header nav:focus-within ul, footer nav:focus-within ul {
-  display: inline-block;
+
+.center {
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+.center-wide {
+  max-width: 85%;
+  margin: 0 auto;
 }
 
 header {
-  border-bottom: 2px solid #2FC4A1;
+  padding: 1.5rem 0;
+}
+header .center-wide {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 footer {
-  padding: 2rem;
-  background: #2E2827;
-  color: #eee;
-  margin-top: 5rem;
-}
-footer .logo-text {
-  color: #eee;
-}
-footer .copy {
-  margin-left: 2rem;
-}
-footer .copy::first-letter {
-  font-size: 2rem;
-  vertical-align: middle;
-  padding-right: 0.2rem;
+  padding: 2.5rem 0;
+  margin-top: 8rem;
+  background: #211d1c;
+  color: white;
 }
 
-main .title {
-  background-position: center;
-  background-size: auto 100%;
-  background-color: #2FC4A1;
-  padding: 5rem 0;
+body > section {
+  font-size: 1.2rem;
+  margin: 4rem 0;
+  font-size: 1.6rem;
 }
-main .title .center {
-  max-width: 600px;
-  color: #2FC4A1;
-  text-shadow: -2px -2px 0px #eee, 2px 2px 0px #2E2827;
-}
-main .title .center h1 {
-  font-size: 6rem;
-  line-height: 100%;
-  text-align: center;
-}
-main .title .center p {
-  font-size: 1.7rem;
-  line-height: 150%;
-  display: none;
-}
-main .features {
-  padding-top: 3rem;
-}
-main .features .center {
-  display: flex;
-  padding: 1rem;
-}
-main .features .center section {
-  padding: 1rem;
-  width: 33.33%;
-}
-main .features .center section h4 {
-  font-size: 1.8rem;
-  font-weight: normal;
-  vertical-align: middle;
-  margin: 0;
-}
-main .features .center section .material-icons {
+body > section h2 {
   font-size: 2.5rem;
-  vertical-align: middle;
-  margin-right: 1rem;
-  color: #2FC4A1;
 }
-main .features .center section p {
-  font-size: 1.2rem;
+body > section h2.mini {
+  font-size: inherit;
+  color: #665a57;
+  margin-top: 0.25rem;
 }
-@media (max-width: 850px) {
-  main .features .center {
-    flex-wrap: wrap;
-  }
-  main .features .center section {
-    width: 100%;
-  }
+body > section .text {
+  width: 55%;
 }
-main .logos {
-  background-color: #2E2827;
-  padding: 1rem;
+body > section ul {
+  line-height: 150%;
 }
-main .logos .center a {
-  user-select: none;
-  text-decoration: none;
-  vertical-align: middle;
-  color: #eee;
-  font-size: 2rem;
-}
-main .logos .center a img {
-  height: 4rem;
-  vertical-align: middle;
-}
-main .logos .center .sunspot {
-  font-family: comfortaa;
-  position: relative;
-  bottom: 0.6rem;
-  margin-left: 0.3rem;
-}
-main .logos .center .sunspot .digital {
-  font-family: comfortaa;
-  font-size: 1.2rem;
-  position: absolute;
-  top: 100%;
-  left: 0;
-}
-main .about {
-  padding: 1rem;
-  padding-top: 2rem;
-}
-main .about h2 {
-  font-size: 2.3rem;
-  display: inline-block;
-  border-bottom: 4px solid #2FC4A1;
-  padding-bottom: 3px;
-}
-main .about p {
-  font-size: 1.2rem;
-  text-align: justify;
-}
-main .about .center {
-  display: block;
-}
-main .services {
-  padding: 1rem;
-  padding-top: 2rem;
-}
-main .services h2 {
-  font-size: 2.3rem;
-  display: inline-block;
-  border-bottom: 4px solid #2FC4A1;
-  padding-bottom: 3px;
-}
-main .services p {
-  font-size: 1.2rem;
-  text-align: justify;
-}
-main .services .center {
-  display: block;
-}
-main .services .boxes {
+body > section .center.flex {
   display: flex;
-  flex-wrap: wrap;
+  align-items: center;
 }
-main .services .boxes section {
-  width: 50%;
-  box-sizing: border-box;
-  padding: 1rem;
+body > section .center.flex.reverse {
+  flex-direction: row-reverse;
 }
-main .services .boxes section h3 {
-  font-size: 1.5rem;
-  font-weight: bold;
-  vertical-align: middle;
-}
-main .services .boxes section .material-icons {
-  font-size: 3rem;
-  vertical-align: middle;
-  color: #2FC4A1;
-  margin-right: 0.5rem;
-}
-@media (max-width: 700px) {
-  main .services .boxes section {
-    width: 100%;
-  }
-}
-main .contact {
-  padding: 1rem;
-  padding-top: 2rem;
-}
-main .contact h2 {
-  font-size: 2.3rem;
-  display: inline-block;
-  border-bottom: 4px solid #2FC4A1;
-  padding-bottom: 3px;
-}
-main .contact p {
-  font-size: 1.2rem;
-  text-align: justify;
-}
-main .contact .center {
-  display: block;
-}
-main .contact .message {
-  padding: 2rem;
-  margin: 2rem;
-  border: 3px solid #2FC4A1;
-  font-size: 2rem;
-  font-weight: bold;
-  font-family: comfortaa;
-  margin-bottom: 281.2px;
+body > section .center.flex img {
+  width: 45%;
+  margin-right: 3rem;
+  pointer-events: none;
+  user-select: none;
 }
 
-.form-label {
-  display: block;
-  font-size: 1.2rem;
-  margin-top: 0.7rem;
-  margin-bottom: 0.2rem;
+section.title {
+  margin-top: 4rem;
+}
+section.title h1 {
+  font-size: 4rem;
 }
 
-input, textarea {
-  padding: 0.5rem;
+#contact form {
   font-size: 1.2rem;
-  border: 2px solid #ddd;
-  background-color: #eee;
-  font-family: inherit;
-  border-radius: 2px;
-  transition: 0.2s;
-  max-width: 100%;
-  box-sizing: border-box;
 }
-input:focus, textarea:focus {
-  background-color: #ddd;
-  border-color: #ccc;
-  border-bottom-color: #2FC4A1;
-  outline: none;
-}
-
-button {
-  border-radius: 2px;
-  background-color: #2FC4A1;
-  font-size: 1.5rem;
-  border: 3px solid #46e0bc;
+#contact form input, #contact form textarea {
   display: block;
-  color: #fff;
-  font-weight: bold;
+  margin: 0.5rem 0;
   padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  border: 2px solid #a69996;
+  font-size: inherit;
+  resize: none;
+  transition: box-shadow 0.2s;
+  font-family: inherit;
+  max-width: 100%;
+}
+#contact form input:focus, #contact form input:focus-visible, #contact form textarea:focus, #contact form textarea:focus-visible {
+  outline: none;
+  border-color: #211d1c;
+  box-shadow: 0 0 0 3px white, 0 0 0 6px #2FC4A1;
+}
+#contact form textarea {
+  padding: 1rem;
+}
+#contact form label {
+  display: block;
+  margin: 0.5rem 0;
+  margin-top: 1rem;
+  user-select: none;
+}
+#contact form button {
+  font-size: 1rem;
+  margin-top: 1rem;
+  border-radius: 0.5rem;
+}
+#contact form button:disabled {
+  opacity: 0.5;
+  background: #2FC4A1 !important;
+  box-shadow: none !important;
+  cursor: default !important;
+}
+#contact form .message {
+  display: block;
+  color: #211d1c;
+  font-size: 1.5rem;
   margin-top: 1rem;
 }
-button:hover, button:focus-within {
-  background-color: #46e0bc;
-  transition: 0.2s;
-  cursor: pointer;
-  outline: none;
+
+section .center > *, section .text > *, section .text li {
+  transition: opacity 0.5s ease, transform 0.5s ease;
 }
-button:active {
-  transition: 0s;
-  background-color: #30aa8d;
-  border-color: #30aa8d;
+
+.hide {
+  opacity: 0;
+  transform: translateY(1.5rem);
+}
+
+@media only screen and (max-width: 1000px) {
+  body > section {
+    font-size: 1.2rem;
+  }
+  body > section .center.flex {
+    display: block;
+    max-width: 90%;
+  }
+  body > section .center.flex > *, body > section .center.flex img {
+    width: 100%;
+  }
+  body > section .center.flex img {
+    max-height: 300px;
+  }
+  body > section h2 {
+    font-size: 2rem;
+  }
+
+  section.title h1 {
+    font-size: 3rem;
+  }
+}
+@media only screen and (max-width: 500px) {
+  header nav .button {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
