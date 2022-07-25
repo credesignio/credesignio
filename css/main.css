@@ -174,7 +174,7 @@ section.title h1 {
 #contact form input:focus, #contact form input:focus-visible, #contact form textarea:focus, #contact form textarea:focus-visible {
   outline: none;
   border-color: #211d1c;
-  box-shadow: 0 0 0 3px white, 0 0 0 6px #2FC4A1 !important;
+  box-shadow: 0 0 0 3px white, 0 0 0 6px #2FC4A1;
 }
 #contact form textarea {
   padding: 1rem;
