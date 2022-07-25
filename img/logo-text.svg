@@ -1,1 +1,78 @@
-/home/jaden/Documents/CreDesign/credesign-logo-text.svg
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="95.591324mm"
+   height="21.737234mm"
+   viewBox="0 0 95.591324 21.737234"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.1.2 (0a00cf5339, 2022-02-04, custom)"
+   sodipodi:docname="credesign-logo-text.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#505050"
+     bordercolor="#eeeeee"
+     borderopacity="1"
+     inkscape:pageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:zoom="2.369669"
+     inkscape:cx="107.18797"
+     inkscape:cy="-18.356994"
+     inkscape:window-width="1680"
+     inkscape:window-height="1022"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-13.18424,-36.57523)">
+    <g
+       id="g3914"
+       transform="matrix(2.8629186,0,0,2.8629186,-112.27636,-150.8932)">
+      <path
+         id="path3908"
+         style="fill:none;stroke:#2fc4a1;stroke-width:0.6;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 47.083682,69.673331 0.895294,1.550694 0.895036,1.550248 0.918612,-0.530361 c 0.856148,-0.494338 1.149489,-1.589101 0.655213,-2.445284 -0.494193,-0.856465 -1.589185,-1.150036 -2.445543,-0.655658 z"
+         sodipodi:nodetypes="ccccccc" />
+      <path
+         id="path3910"
+         style="fill:none;stroke:#2fc4a1;stroke-width:0.6;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 47.083682,65.993453 c -0.282397,-0.139324 -0.59306,-0.211818 -0.907955,-0.211874 -1.133731,-8.3e-5 -2.052903,0.918857 -2.053105,2.052588 -8.4e-5,1.133933 0.919172,2.053189 2.053105,2.053105 0.315058,-6.88e-4 0.625729,-0.0739 0.907955,-0.213941"
+         sodipodi:nodetypes="ccccc" />
+      <circle
+         style="fill:#2fc4a1;fill-opacity:1;stroke:none;stroke-width:0.784665;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="circle3912"
+         cx="46.129566"
+         cy="67.819176"
+         r="0.36561617" />
+    </g>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:13.0802px;line-height:1.25;font-family:Comfortaa;-inkscape-font-specification:'Comfortaa, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#2e2827;fill-opacity:1;stroke:none;stroke-width:0.327004"
+       x="39.594513"
+       y="51.204403"
+       id="text4093"><tspan
+         sodipodi:role="line"
+         id="tspan4091"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:13.0802px;font-family:Comfortaa;-inkscape-font-specification:'Comfortaa, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#2e2827;fill-opacity:1;stroke-width:0.327004"
+         x="39.594513"
+         y="51.204403">CreDesign</tspan></text>
+  </g>
+</svg>
