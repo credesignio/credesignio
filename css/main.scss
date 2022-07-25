@@ -248,10 +248,16 @@ section .center > *, section .text > *, section .text li{
     section.title h1{
         font-size: 3rem;
     }
+    section.title{
+        margin-top: 0;
+    }
+    footer{
+        margin-top: 0;
+    }
 }
 
 @media only screen and (max-width: 500px){
-        header nav .button {
+    header nav .button {
         display: none;
     }
 }
