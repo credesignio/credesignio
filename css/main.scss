@@ -72,7 +72,7 @@ a{
     color: white;
 }
 
-.button, button{
+.button, .button2, button{
     text-transform: uppercase;
     border: none;
     padding: .75rem 1.5rem;
@@ -83,13 +83,16 @@ a{
     transition: background-color 0.2s, box-shadow 0.2s;
     letter-spacing: 1px;
     font-size: inherit;
+    text-decoration: none;
 
     &:hover{
         text-decoration: none;
         background-color: lighten($theme, 10%);
         cursor: pointer;
+        text-decoration: none;
     }
     &:focus-visible{
+        text-decoration: none;
         text-decoration: none;
         outline: none;
         box-shadow: 0 0 0 3px white, 0 0 0 6px $theme;
@@ -168,12 +171,50 @@ section.title{
 
 section.projects{
     article{
+        margin-bottom: 4rem;
+        --theme-color: #{$theme};
         img{
             width: 70%;
             border-radius: 2rem;
-            box-shadow: 0 0 0 3px rgba($theme, 0.25);
+            box-shadow: 0 0 0 3px var(--theme-color);
             padding: 6px;
+            margin-top: 1rem;
         }
+        h3{
+            font-size: 2rem;
+            margin-bottom: 0;
+        }
+        .button2{
+            background: var(--theme-color);
+            &:hover{
+                background-color: var(--theme-color);
+            }
+            &:focus-visible{
+                box-shadow: 0 0 0 3px white, 0 0 0 6px var(--theme-color);
+            }
+        }
+
+        &.sun{
+            --theme-color: #FFE46E;
+            .button2{color: $black}
+        }
+        &.ace{
+            --theme-color: #78A22E;
+        }
+    }
+}
+
+button, .button2 {
+    font-size: 1rem;
+    margin-top: 1rem;
+    border-radius: .5rem;
+    display: inline-block;
+
+    &:disabled {
+        opacity: 0.5;
+        background: $theme  !important;
+        box-shadow: none !important;
+        cursor: default !important;
     }
 }
 
@@ -205,17 +246,6 @@ section.projects{
         margin: .5rem 0;
         margin-top: 1rem;
         user-select: none;
-    }
-    button{
-        font-size: 1rem;
-        margin-top: 1rem;
-        border-radius: .5rem;
-        &:disabled{
-            opacity: 0.5;
-            background: $theme !important;
-            box-shadow: none !important;
-            cursor: default !important;
-        }
     }
     .message{
         display: block;

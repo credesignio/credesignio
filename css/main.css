@@ -67,7 +67,7 @@ a:hover, a:focus-visible {
   color: white;
 }
 
-.button, button {
+.button, .button2, button {
   text-transform: uppercase;
   border: none;
   padding: 0.75rem 1.5rem;
@@ -78,13 +78,16 @@ a:hover, a:focus-visible {
   transition: background-color 0.2s, box-shadow 0.2s;
   letter-spacing: 1px;
   font-size: inherit;
+  text-decoration: none;
 }
-.button:hover, button:hover {
+.button:hover, .button2:hover, button:hover {
   text-decoration: none;
   background-color: #51d5b6;
   cursor: pointer;
+  text-decoration: none;
 }
-.button:focus-visible, button:focus-visible {
+.button:focus-visible, .button2:focus-visible, button:focus-visible {
+  text-decoration: none;
   text-decoration: none;
   outline: none;
   box-shadow: 0 0 0 3px white, 0 0 0 6px #2FC4A1;
@@ -156,11 +159,51 @@ section.title h1 {
   font-size: 4rem;
 }
 
+section.projects article {
+  margin-bottom: 4rem;
+  --theme-color: #2FC4A1;
+}
 section.projects article img {
   width: 70%;
   border-radius: 2rem;
-  box-shadow: 0 0 0 3px rgba(47, 196, 161, 0.25);
+  box-shadow: 0 0 0 3px var(--theme-color);
   padding: 6px;
+  margin-top: 1rem;
+}
+section.projects article h3 {
+  font-size: 2rem;
+  margin-bottom: 0;
+}
+section.projects article .button2 {
+  background: var(--theme-color);
+}
+section.projects article .button2:hover {
+  background-color: var(--theme-color);
+}
+section.projects article .button2:focus-visible {
+  box-shadow: 0 0 0 3px white, 0 0 0 6px var(--theme-color);
+}
+section.projects article.sun {
+  --theme-color: #FFE46E;
+}
+section.projects article.sun .button2 {
+  color: #211d1c;
+}
+section.projects article.ace {
+  --theme-color: #78A22E;
+}
+
+button, .button2 {
+  font-size: 1rem;
+  margin-top: 1rem;
+  border-radius: 0.5rem;
+  display: inline-block;
+}
+button:disabled, .button2:disabled {
+  opacity: 0.5;
+  background: #2FC4A1 !important;
+  box-shadow: none !important;
+  cursor: default !important;
 }
 
 #contact form {
@@ -191,17 +234,6 @@ section.projects article img {
   margin: 0.5rem 0;
   margin-top: 1rem;
   user-select: none;
-}
-#contact form button {
-  font-size: 1rem;
-  margin-top: 1rem;
-  border-radius: 0.5rem;
-}
-#contact form button:disabled {
-  opacity: 0.5;
-  background: #2FC4A1 !important;
-  box-shadow: none !important;
-  cursor: default !important;
 }
 #contact form .message {
   display: block;
