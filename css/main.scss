@@ -166,6 +166,17 @@ section.title{
     }
 }
 
+section.projects{
+    article{
+        img{
+            width: 70%;
+            border-radius: 2rem;
+            box-shadow: 0 0 0 3px rgba($theme, 0.25);
+            padding: 6px;
+        }
+    }
+}
+
 #contact form{
     font-size: 1.2rem;
     input, textarea{
