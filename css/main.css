@@ -165,7 +165,7 @@ section.projects article {
 }
 section.projects article img {
   width: 70%;
-  border-radius: 2rem;
+  border-radius: 1.5rem;
   box-shadow: 0 0 0 3px var(--theme-color);
   padding: 6px;
   margin-top: 1rem;
@@ -255,9 +255,11 @@ section .center > *, section .text > *, section .text li {
   body > section {
     font-size: 1.2rem;
   }
+  body > section .center {
+    max-width: 90%;
+  }
   body > section .center.flex {
     display: block;
-    max-width: 90%;
   }
   body > section .center.flex > *, body > section .center.flex img {
     width: 100%;
@@ -279,6 +281,10 @@ section .center > *, section .text > *, section .text li {
 
   footer {
     margin-top: 0;
+  }
+
+  section.projects article img {
+    width: 100%;
   }
 }
 @media only screen and (max-width: 500px) {
