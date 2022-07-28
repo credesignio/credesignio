@@ -119,33 +119,33 @@ footer {
   color: white;
 }
 
-body > section {
+main > section {
   margin: 4rem 0;
   font-size: 1.6rem;
 }
-body > section h2 {
+main > section h2 {
   font-size: 2.5rem;
 }
-body > section .mini {
+main > section .mini {
   display: block;
   font-size: 1.6rem;
   color: #665a57;
   margin-top: 0.25rem;
 }
-body > section .text {
+main > section .text {
   width: 55%;
 }
-body > section ul {
+main > section ul {
   line-height: 150%;
 }
-body > section .center.flex {
+main > section .center.flex {
   display: flex;
   align-items: center;
 }
-body > section .center.flex.reverse {
+main > section .center.flex.reverse {
   flex-direction: row-reverse;
 }
-body > section .center.flex img {
+main > section .center.flex img {
   width: 45%;
   margin-right: 3rem;
   pointer-events: none;
@@ -252,22 +252,22 @@ section .center > *, section .text > *, section .text li {
 }
 
 @media only screen and (max-width: 1000px) {
-  body > section {
+  main > section {
     font-size: 1.2rem;
   }
-  body > section .center {
+  main > section .center {
     max-width: 90%;
   }
-  body > section .center.flex {
+  main > section .center.flex {
     display: block;
   }
-  body > section .center.flex > *, body > section .center.flex img {
+  main > section .center.flex > *, main > section .center.flex img {
     width: 100%;
   }
-  body > section .center.flex img {
+  main > section .center.flex img {
     max-height: 300px;
   }
-  body > section h2 {
+  main > section h2 {
     font-size: 2rem;
   }
 
