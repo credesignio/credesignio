@@ -192,6 +192,9 @@ section.projects article.sun .button2 {
 section.projects article.ace {
   --theme-color: #78A22E;
 }
+section.projects article.mona {
+  --theme-color: #c9985c;
+}
 
 button, .button2 {
   font-size: 1rem;
@@ -270,19 +273,15 @@ section .center > *, section .text > *, section .text li {
   main > section h2 {
     font-size: 2rem;
   }
-
   section.title h1 {
     font-size: 3rem;
   }
-
   section.title {
     margin-top: 0;
   }
-
   footer {
     margin-top: 0;
   }
-
   section.projects article img {
     width: 100%;
   }
